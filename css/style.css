@@ -1,0 +1,157 @@
+
+/* FONTS */
+
+@font-face {
+    font-family:'Monserrat' ;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+
+/* ALL */ 
+
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    display: flex;    
+    font-family: 'Monserrat', Arial, sans-serif;
+    margin: 0;
+    flex-direction: column;
+    background-color: rgba(95, 159, 49, 0.414);
+    font-size: 20px;   
+}
+
+
+/* HEADER */
+
+
+.menu{
+    list-style-type: none;
+    margin: 0;    
+    display: flex;
+    justify-content: center;
+    background-color: rgba(95, 159, 49, 0.414);
+    height: 50px;
+    padding-top: 32px;
+}
+
+
+.menu li+li{
+    margin-left: 30px;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(58, 106, 24);
+    font-size: large;
+    font-weight: 700;
+    padding: 5px;
+   
+    border:3px ridge rgb(58, 106, 24);
+}
+
+li a:hover{
+    color:rgb(10, 17, 5);
+    border-color: rgb(10, 17, 5);
+}
+
+
+/* BODY */
+
+
+.content{
+    margin: 0 200px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    padding: 0 30px;
+    padding-bottom: 20px;
+}
+
+.main{
+    flex-direction: row;
+}
+
+.imd-wrapper{
+    margin-left: 150px;    
+}
+
+h1{
+    color: rgb(10, 17, 5);
+    font-size: 42px;
+    font-family: 'PlayfairDisplay', serif;
+}
+
+.main img{
+    border-radius: 200px/150px;
+    border: 5px solid rgb(10, 17, 5);
+    padding: 5px;
+}
+
+.skills{
+    margin-left: 200px;
+    margin-top: 60px;
+}
+.skills li+li{
+    margin-top: 15px;
+}
+
+h2{
+    color: rgb(10, 17, 5);
+    font-size: 30px;
+    font-family: 'PlayfairDisplay';
+}
+
+
+/* OTHER */
+
+
+.other{
+    margin-top: 70px;
+}
+
+.other h2{
+    margin-block-end: 0;
+}
+
+.other p{
+    padding-inline-start: 20px;
+}
+
+
+/* FOOTER */
+
+
+footer{
+    background-color: rgba(95, 159, 49, 0.729);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.contact p{
+    margin: 0;
+}
+
+.contact img{
+    width: 20px;
+    margin-right: 15px;    
+}
+
+.phone, .email{
+    flex-direction: row;
+    align-items:center;
+}
+
+.email{
+    margin-top: 20px;
+}
+
+.contact a{
+    color: rgb(10, 17, 5);
+}
